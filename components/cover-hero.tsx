@@ -26,7 +26,7 @@ const AnimatedText = ({
       {text.split("").map((char, index) => (
         <span
           key={index}
-          className="hero-char inline-block"
+          className="hero-char inline-block opacity-0"
           style={{ whiteSpace: "pre" }}
         >
           {char}
@@ -212,7 +212,7 @@ export const CoverHero = () => {
             <AnimatedText text="Interfaces" />
           </h1>
 
-          <p className="hero-subtitle mt-8 md:mt-12 text-neutral-300 text-sm sm:text-base md:text-lg max-w-lg leading-relaxed font-normal drop-shadow-md">
+          <p className="hero-subtitle mt-8 md:mt-12 text-neutral-300 text-sm sm:text-base md:text-lg max-w-lg leading-relaxed font-normal drop-shadow-md opacity-0">
             {PERSONAL_INFO.heroSubtitle}
           </p>
         </div>
@@ -224,7 +224,7 @@ export const CoverHero = () => {
             onClick={handleOpenPortfolio}
             disabled={isTransitioning}
             aria-label="Open portfolio to explore projects, experience, and skills"
-            className="group relative inline-flex items-center justify-center gap-3 rounded-full bg-white px-8 py-4 text-base md:text-lg font-medium text-neutral-900 shadow-2xl transition-all duration-300 hover:bg-neutral-100 hover:shadow-white/20 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-900 cursor-pointer disabled:cursor-not-allowed"
+            className="group relative inline-flex items-center justify-center gap-3 rounded-full bg-white px-8 py-4 text-base md:text-lg font-medium text-neutral-900 shadow-2xl transition-all duration-300 hover:bg-neutral-100 hover:shadow-white/20 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-900 cursor-pointer disabled:cursor-not-allowed opacity-0"
           >
             <div className="btn-content flex items-center justify-center gap-3">
               <span>OPEN PORTFOLIO</span>
