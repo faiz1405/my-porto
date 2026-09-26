@@ -224,7 +224,7 @@ export const ExperienceView = () => {
 	}
 
 	const handleDownloadResume = () => {
-		window.open('#', '_blank')
+		window.location.href = '/contact';
 	}
 
 	return (
@@ -264,7 +264,7 @@ export const ExperienceView = () => {
 									ref={buttonRef}
 									type="button"
 									tabIndex={0}
-									aria-label="Download CV atau Resume"
+									aria-label="Request CV atau Resume"
 									className={`group relative flex items-center justify-center gap-2 rounded-none border-2 border-white/40 px-6 py-4 font-mono font-bold uppercase transition-colors duration-300 focus:outline-none pointer-events-none min-w-[280px] h-[60px] ${
 										isButtonGlitch 
 										? 'bg-red-600 text-white border-red-600 shadow-[0_0_20px_rgba(220,38,38,0.8)]' 
@@ -272,10 +272,10 @@ export const ExperienceView = () => {
 									}`}
 								>
 									{isButtonGlitch ? (
-										<span className="tracking-widest absolute inset-0 flex items-center justify-center bg-red-600 text-white">[ STEAL RESUME ]</span>
+										<span className="tracking-widest absolute inset-0 flex items-center justify-center bg-red-600 text-white">[ REQUEST CV ]</span>
 									) : (
 										<>
-											<span>Download My Resume</span>
+											<span>Request My CV</span>
 											<ArrowUpRightIcon className="w-5 h-5 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
 										</>
 									)}
